@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Our Work | Dwyer Concrete Pumping Services</title>
     <meta name="description" content="View the full portfolio of our line pumping projects in Middle Tennessee.">
     
@@ -15,13 +15,18 @@
 <body>
     <nav class="navbar scrolled">
         <div class="nav-container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" aria-label="Dwyer Concrete Home">
                 <img src="16d41458-66af-434a-9d2b-956a4a784f21.png" alt="Dwyer Concrete Pumping Logo" class="logo-img">
             </a>
+            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="index.html#services">Services</a>
                 <a href="portfolio.html" class="text-accent">Our Work</a>
-                <a href="index.html#contact" class="btn btn-primary">Call 615-863-3343</a>
+                <a href="index.html#contact" class="btn btn-primary" aria-label="Call 615-863-3343">Call 615-863-3343</a>
             </div>
         </div>
     </nav>
@@ -38,42 +43,35 @@
     <section class="section bg-secondary">
         <div class="container reveal">
             <div class="portfolio-grid" id="full-gallery">
-                <!-- Gallery Item 1 -->
                 <div class="portfolio-item">
                     <img src="28082A47-3982-450B-81F6-427A358AD39B.PNG" alt="Dwyer Concrete Rig on site">
                     <div class="portfolio-overlay">
                         <span>Putzmeister Line Pump</span>
                     </div>
                 </div>
-                <!-- Gallery Item 2 -->
                 <div class="portfolio-item">
                     <img src="41671B7B-4F2D-4612-8C01-6A68D897CB07.PNG" alt="Dwyer Concrete residential foundation pour">
                     <div class="portfolio-overlay">
                         <span>Foundation Pour</span>
                     </div>
                 </div>
-                <!-- Gallery Item 3 -->
                 <div class="portfolio-item">
                     <img src="CAF1D2C7-3EE0-4B4F-9BF7-7F615A1D5CF6.PNG" alt="Dwyer Concrete Rig pumping tight access">
                     <div class="portfolio-overlay">
                         <span>Tight Access Pumping</span>
                     </div>
                 </div>
-                <!-- Gallery Item 4 -->
                 <div class="portfolio-item">
                     <img src="BCBC6D57-8DAB-4EBC-B6A5-4FD26A46B113.PNG" alt="Dwyer Concrete Pool Deck Pour">
                     <div class="portfolio-overlay">
                         <span>Pool Deck Pour</span>
                     </div>
                 </div>
-                
-                <!-- More items will be added here as the user provides photos -->
-                
             </div>
             
             <div style="text-align: center; margin-top: 4rem;">
                 <p style="color: var(--text-muted); margin-bottom: 2rem;">More jobs being added constantly as we complete pours across the state.</p>
-                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                <a href="index.html" class="btn btn-secondary" aria-label="Back to Home">Back to Home</a>
             </div>
         </div>
     </section>
@@ -87,6 +85,12 @@
             <p>Based in Chapel Hill, Tennessee.</p>
         </div>
     </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <a href="tel:6158633343" class="mobile-sticky-cta" aria-label="Call 615-863-3343">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 615-863-3343
+    </a>
 
     <script src="main.js"></script>
 </body>
